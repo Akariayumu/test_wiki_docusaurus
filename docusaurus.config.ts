@@ -44,7 +44,55 @@ const config: Config = {
     navbar: {
       title: 'KyWiki',
       items: [
-        { to: '/c1902', label: 'C1902', position: 'left' },
+        { to: '/', label: '首页', position: 'left' },
+        {
+          type: 'dropdown',
+          label: 'C1902',
+          position: 'left',
+          items: [
+            { to: '/c1902', label: '产品介绍' },
+            { to: '/flashing-guide', label: '刷机教程' },
+          ],
+        },
+        {
+          type: 'dropdown',
+          label: 'C1901',
+          position: 'left',
+          items: [
+            { to: '/c1901', label: '产品介绍' },
+            { to: '/c1901-flashing-guide', label: '刷机教程' },
+          ],
+        },
+        {
+          type: 'dropdown',
+          label: 'Orin系列',
+          position: 'left',
+          items: [
+            { to: '/orin-nano-introduction', label: 'Nano说明' },
+            { to: '/orin-nx-introduction', label: 'NX说明' },
+            { to: '/orin-nano-guide', label: 'Nano指南' },
+          ],
+        },
+        {
+          type: 'dropdown',
+          label: 'GPIO教程',
+          position: 'left',
+          items: [
+            { to: '/gpio-jetpack6', label: 'JetPack6' },
+            { to: '/gpio-jetpack5', label: 'JetPack5' },
+          ],
+        },
+        {
+          type: 'dropdown',
+          label: '外设与配置',
+          position: 'left',
+          items: [
+            { to: '/network-card-driver', label: '网卡驱动' },
+            { to: '/usb-configuration', label: 'USB配置' },
+            { to: '/gpio-control', label: 'GPIO控制' },
+            { to: '/other-peripherals', label: '其他外设' },
+          ],
+        },
         { type: 'localeDropdown', position: 'right' },
         { href: 'https://github.com/Akariayumu/test_wiki', label: 'GitHub', position: 'right' },
       ],
