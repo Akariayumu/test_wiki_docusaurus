@@ -1,5 +1,5 @@
-import { themes as prismThemes } from 'prism-react-renderer';
-import type { Config } from '@docusaurus/types';
+import {themes as prismThemes} from 'prism-react-renderer';
+import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
@@ -19,8 +19,8 @@ const config: Config = {
     defaultLocale: 'zh-CN',
     locales: ['zh-CN', 'en'],
     localeConfigs: {
-      'zh-CN': { label: '简体中文', direction: 'ltr', path: '/' },
-      en: { label: 'English', direction: 'ltr', path: '/en' },
+      'zh-CN': {label: '简体中文', direction: 'ltr', path: '/'},
+      en: {label: 'English', direction: 'ltr', path: '/en'},
     },
   },
 
@@ -44,14 +44,14 @@ const config: Config = {
     navbar: {
       title: 'KyWiki',
       items: [
-        { to: '/', label: '首页', position: 'left' },
+        {to: '/', label: 'Home', position: 'left'},
         {
           type: 'dropdown',
           label: 'C1902',
           position: 'left',
           items: [
-            { to: '/c1902', label: '产品介绍' },
-            { to: '/flashing-guide', label: '刷机教程' },
+            {to: '/c1902', label: 'Overview'},
+            {to: '/flashing-guide', label: 'Flashing Guide'},
           ],
         },
         {
@@ -59,42 +59,51 @@ const config: Config = {
           label: 'C1901',
           position: 'left',
           items: [
-            { to: '/c1901', label: '产品介绍' },
-            { to: '/c1901-flashing-guide', label: '刷机教程' },
+            {to: '/c1901', label: 'Overview'},
+            {to: '/c1901-flashing-guide', label: 'Flashing Guide'},
           ],
         },
         {
           type: 'dropdown',
-          label: 'Orin系列',
+          label: 'C2401',
           position: 'left',
           items: [
-            { to: '/orin-nano-introduction', label: 'Nano说明' },
-            { to: '/orin-nx-introduction', label: 'NX说明' },
-            { to: '/orin-nano-guide', label: 'Nano指南' },
+            {to: '/c2401-mini-kit', label: 'Mini Kit'},
+            {to: '/c2401-system-flashing', label: 'System Flashing'},
           ],
         },
         {
           type: 'dropdown',
-          label: 'GPIO教程',
+          label: 'Orin',
           position: 'left',
           items: [
-            { to: '/gpio-jetpack6', label: 'JetPack6' },
-            { to: '/gpio-jetpack5', label: 'JetPack5' },
+            {to: '/orin-nano-introduction', label: 'Nano Intro'},
+            {to: '/orin-nx-introduction', label: 'NX Intro'},
+            {to: '/orin-nano-guide', label: 'Nano Guide'},
           ],
         },
         {
           type: 'dropdown',
-          label: '外设与配置',
+          label: 'GPIO',
           position: 'left',
           items: [
-            { to: '/network-card-driver', label: '网卡驱动' },
-            { to: '/usb-configuration', label: 'USB配置' },
-            { to: '/gpio-control', label: 'GPIO控制' },
-            { to: '/other-peripherals', label: '其他外设' },
+            {to: '/gpio-jetpack6', label: 'JetPack 6'},
+            {to: '/gpio-jetpack5', label: 'JetPack 5'},
           ],
         },
-        { type: 'localeDropdown', position: 'right' },
-        { href: 'https://github.com/Akariayumu/test_wiki', label: 'GitHub', position: 'right' },
+        {
+          type: 'dropdown',
+          label: 'Peripherals',
+          position: 'left',
+          items: [
+            {to: '/network-card-driver', label: 'Network Driver'},
+            {to: '/usb-configuration', label: 'USB Config'},
+            {to: '/gpio-control', label: 'GPIO Control'},
+            {to: '/other-peripherals', label: 'Others'},
+          ],
+        },
+        {type: 'localeDropdown', position: 'right'},
+        {href: 'https://github.com/Akariayumu/test_wiki', label: 'GitHub', position: 'right'},
       ],
     },
     footer: {

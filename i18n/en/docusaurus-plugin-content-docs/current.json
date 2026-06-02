@@ -1,0 +1,20 @@
+{
+  "sidebar.mainSidebar.category.C1902 载板": {
+    "message": "C1902 Carrier Board"
+  },
+  "sidebar.mainSidebar.category.C1901 载板": {
+    "message": "C1901 Carrier Board"
+  },
+  "sidebar.mainSidebar.category.C2401 迷你套件": {
+    "message": "C2401 Mini Kit"
+  },
+  "sidebar.mainSidebar.category.Orin系列": {
+    "message": "Orin Series"
+  },
+  "sidebar.mainSidebar.category.GPIO教程": {
+    "message": "GPIO Tutorials"
+  },
+  "sidebar.mainSidebar.category.外设与配置": {
+    "message": "Peripherals & Config"
+  }
+}

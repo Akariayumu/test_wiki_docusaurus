@@ -4,7 +4,7 @@ title: C1902 刷机教程
 
 # C1902 刷入系统
 
-::: tip 准备
+:::tip 准备
 建议在 **Linux 系统或 Linux 虚拟机** 下进行刷机操作。虚拟机和 SDK Manager 安装方法可参考 [vmware虚拟机安装说明](#)。
 :::
 
@@ -30,7 +30,7 @@ title: C1902 刷机教程
 
 ![恢复模式已检测到](/img/flash-recovery-detected.png)
 
-::: warning 注意
+:::warning 注意
 进入恢复模式后一段时间内不操作会重启进入系统，请注意操作时机。
 :::
 
@@ -70,7 +70,7 @@ title: C1902 刷机教程
 
 ![刷机完成](/img/flash-sdk-done.png)
 
-::: warning 注意事项
+:::warning 注意事项
 - 刷入过程中开发板可能会多次与主机重新连接，**请勿途中拔开数据线或切断开发板电源**。
 - 可以在识别到开发板类型以后就拔掉跳线帽。
 - 耐心等待刷机完成，大约 **10~20 分钟**。
@@ -82,7 +82,7 @@ title: C1902 刷机教程
 
 ## 2. 使用命令行刷入 SUPER 固件
 
-::: warning 前置条件
+:::warning 前置条件
 此操作需依赖官方固件环境，请先通过 SDK Manager 完成至少一次完整的烧录以创建固件缓存。
 :::
 
@@ -92,7 +92,7 @@ title: C1902 刷机教程
 
 ### 2.2 使用官方固件进行命令行刷机
 
-::: danger 提醒
+:::danger 提醒
 操作前请**关闭正在运行的 SDK Manager 软件**。刷入过程约为 **10~20 分钟**。
 :::
 
@@ -171,7 +171,7 @@ sudo ./tools/backup_restore/l4t_backup_restore.sh -b -e nvme0n1 jetson-orin-nano
 sudo ./tools/backup_restore/l4t_backup_restore.sh -r -e nvme0n1 jetson-orin-nano-devkit-nvme
 ```
 
-::: warning 第三方载板注意
+:::warning 第三方载板注意
 若您使用第三方载板恢复备份，需要修改 `nvrestore_partitions.sh`，注释掉 **292~296 行**的内容。
 :::
 

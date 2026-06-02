@@ -4,7 +4,7 @@ title: C1902 Flashing Guide
 
 # C1902 System Flashing Guide
 
-::: tip Preparation
+:::tip Preparation
 It is recommended to perform flashing operations on a **Linux system or Linux virtual machine**. For VM and SDK Manager installation, refer to the VMware setup guide.
 :::
 
@@ -30,7 +30,7 @@ Set the USB connection mode to **Connect to the foreground virtual machine** to 
 
 ![Recovery Mode Detected](/img/flash-recovery-detected.png)
 
-::: warning Note
+:::warning Note
 The board will reboot into the system if left idle in recovery mode. Pay attention to timing.
 :::
 
@@ -70,7 +70,7 @@ Select **Developer Kit Version**:
 
 ![Flashing Complete](/img/flash-sdk-done.png)
 
-::: warning Important
+:::warning Important
 - The board may reconnect multiple times during flashing. **Do not disconnect the USB cable or power**.
 - You can remove the jumper cap once the module type has been detected.
 - The process takes approximately **10–20 minutes**.
@@ -82,7 +82,7 @@ Select **Developer Kit Version**:
 
 ## 2. Command-Line SUPER Mode Flashing
 
-::: warning Prerequisites
+:::warning Prerequisites
 This method requires the official firmware environment. Complete at least one full flash via SDK Manager first to create the firmware cache.
 :::
 
@@ -92,7 +92,7 @@ Short **FC REC** and **GND** pins with a jumper cap, connect via Type-C cable, a
 
 ### 2.2 Command-Line Flashing
 
-::: danger Caution
+:::danger Caution
 **Close any running SDK Manager** before proceeding. The flash takes approximately **10–20 minutes**.
 :::
 
@@ -171,7 +171,7 @@ sudo ./tools/backup_restore/l4t_backup_restore.sh -b -e nvme0n1 jetson-orin-nano
 sudo ./tools/backup_restore/l4t_backup_restore.sh -r -e nvme0n1 jetson-orin-nano-devkit-nvme
 ```
 
-::: warning Third-Party Carrier Boards
+:::warning Third-Party Carrier Boards
 If restoring to a third-party carrier board, modify `nvrestore_partitions.sh` and comment out **lines 292–296**.
 :::
 
