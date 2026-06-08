@@ -1,0 +1,46 @@
+backend:
+  name: github
+  repo: Akariayumu/test_wiki_docusaurus
+  branch: main
+  base_url: https://decapcms.org/oauth/
+
+media_folder: static/img
+public_folder: /test_wiki_docusaurus/img
+
+site_url: https://akariayumu.github.io/test_wiki_docusaurus
+display_url: https://akariayumu.github.io/test_wiki_docusaurus
+logo_url: /test_wiki_docusaurus/img/logo.svg
+
+locale: zh
+publish_mode: editorial_workflow
+
+collections:
+  - name: docs_zh
+    label: "📄 中文文档 (zh-CN)"
+    label_singular: "文档页面"
+    folder: docs
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    format: frontmatter
+    editor:
+      preview: false
+    fields:
+      - {label: "标题", name: "title", widget: "string"}
+      - {label: "侧边栏位置", name: "sidebar_position", widget: "number", default: 1, required: false}
+      - {label: "正文", name: "body", widget: "markdown"}
+
+  - name: docs_en
+    label: "📄 English Docs (en)"
+    label_singular: "Page"
+    folder: i18n/en/docusaurus-plugin-content-docs/current
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    format: frontmatter
+    editor:
+      preview: false
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Sidebar Position", name: "sidebar_position", widget: "number", default: 1, required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
