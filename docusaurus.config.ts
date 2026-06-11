@@ -39,6 +39,10 @@ const config: Config = {
     ],
   ],
 
+  scripts: [
+    { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js', async: false },
+  ],
+
   themeConfig: {
     image: 'img/c1902-front.jpg',
     navbar: {
