@@ -4,11 +4,11 @@ backend:
   branch: main
 
 media_folder: static/img
-public_folder: /test_wiki_docusaurus/img
+public_folder: /img
 
 site_url: https://akariayumu.github.io/test_wiki_docusaurus
 display_url: https://akariayumu.github.io/test_wiki_docusaurus
-logo_url: /test_wiki_docusaurus/img/logo.svg
+logo_url: /img/logo.svg
 
 locale: zh
 publish_mode: editorial_workflow

@@ -8,7 +8,7 @@ const config: Config = {
   favicon: 'img/favicon.ico',
 
   url: 'https://akariayumu.github.io',
-  baseUrl: '/test_wiki_docusaurus/',
+  baseUrl: '/',
   organizationName: 'Akariayumu',
   projectName: 'test_wiki_docusaurus',
 
