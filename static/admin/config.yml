@@ -1,14 +1,15 @@
 backend:
-  name: git-gateway
+  name: github
   repo: Akariayumu/test_wiki_docusaurus
   branch: main
+  base_url: https://decapcms.org/oauth/
 
 media_folder: static/img
-public_folder: /img
+public_folder: /test_wiki_docusaurus/img
 
 site_url: https://akariayumu.github.io/test_wiki_docusaurus
 display_url: https://akariayumu.github.io/test_wiki_docusaurus
-logo_url: /img/logo.svg
+logo_url: /test_wiki_docusaurus/img/logo.svg
 
 locale: zh
 publish_mode: editorial_workflow

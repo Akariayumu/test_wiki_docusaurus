@@ -8,7 +8,7 @@ const config: Config = {
   favicon: 'img/favicon.ico',
 
   url: 'https://akariayumu.github.io',
-  baseUrl: '/',
+  baseUrl: '/test_wiki_docusaurus/',
   organizationName: 'Akariayumu',
   projectName: 'test_wiki_docusaurus',
 
@@ -37,10 +37,6 @@ const config: Config = {
         },
       } satisfies Preset.Options,
     ],
-  ],
-
-  scripts: [
-    { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js', async: false },
   ],
 
   themeConfig: {
